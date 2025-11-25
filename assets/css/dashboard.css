@@ -1,0 +1,71 @@
+.dashboard-wrapper {
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.stat-card h4 {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section-title {
+    margin: 20px 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.crm-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.crm-table th, .crm-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.crm-table th {
+    background: #f6f6f6;
+    text-align: left;
+}
+
+.crm-table tr:last-child td {
+    border-bottom: none;
+}
+
+.view-btn {
+    background: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}

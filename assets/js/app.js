@@ -34,4 +34,18 @@ document.addEventListener("submit", e => {
       }
     });
   }
+//dashboard  
+// Auto-load dashboard when the page first loads
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.getElementById("content-area")) {
+    fetch("ajax/load_page.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: "page=dashboard"
+    })
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("content-area").innerHTML = data;
+    });
+  }
 });
